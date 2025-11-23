@@ -1,5 +1,5 @@
 -- SET <leader>bd: Close the current buffer
-vim.api.nvim_set_keymap("n", "<leader>bd", ":bd<CR>", {})
+vim.keymap.set("n", "<leader>bd", "<Cmd>bd<CR>", {})
 
 -- SET <leader>bo: Close all buffers except the current one
 vim.keymap.set(
@@ -21,8 +21,8 @@ vim.keymap.set(
 )
 
 -- SET <C-h>: Switch to the previous buffer
-vim.api.nvim_set_keymap("n", "<C-h>", ":bprevious<CR>", {})
+vim.keymap.set("n", "H", "<Cmd>bprevious<CR>", {})
 
 -- SET <C-l>: Switch to the next buffer
-vim.api.nvim_set_keymap("n", "<C-l>", ":bnext<CR>", {})
+vim.keymap.set("n", "L", "<Cmd>bnext<CR>", {})
 
