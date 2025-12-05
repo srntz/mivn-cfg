@@ -10,3 +10,4 @@ vim.lsp.config('*', {
   end
 })
 vim.lsp.enable('ruby_lsp')
+vim.lsp.enable('gopls')
